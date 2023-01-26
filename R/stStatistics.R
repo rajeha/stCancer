@@ -469,7 +469,7 @@ Load_Spatial <- function(data.dir,
   image <- t.list[[1]]
 
   tissue.positions <- read.csv(
-    file = file.path(file.path(data.dir, "spatial"), 'tissue_positions_list.csv'),
+    file = file.path(file.path(data.dir, "spatial"), 'tissue_positions.csv'),
     col.names = c('barcodes', 'tissue', 'row', 'col', 'imagerow', 'imagecol'),
     header = FALSE,
     as.is = TRUE,
